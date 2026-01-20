@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="https://i.ibb.co/7bJkS4B/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faustina Easy Education</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Supabase via CDN for resilience against build environment issues -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.39.0/dist/umd/supabase.min.js"></script>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.0.4",
+    "vite": "https://aistudiocdn.com/vite@^7.1.11"
+  }
+}
+</script>
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+  /* Hide scrollbar for all elements in Chrome, Safari and Opera */
+  *::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for all elements in IE, Edge and Firefox */
+  * {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+</style>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root"></div>
+    <!-- Supabase client is loaded via importmap -->
+    
+    <!--
+      In this browser-based environment, Vite's standard .env file handling
+      (import.meta.env) is not available. We define the credentials directly
+      on the window object for the application to use.
+    -->
+    <script>
+      window.SUPABASE_CONFIG = {
+        URL: "https://xupnwzceifaisqbkwxnk.supabase.co",
+        ANON_KEY: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inh1cG53emNlaWZhaXNxYmt3eG5rIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjI2OTMzNDksImV4cCI6MjA3ODI2OTM0OX0.ypWCNeKlWFZL61U-YZfoHUXiWNhRZsimWlsibj0O9Gw"
+      };
+    </script>
+
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
